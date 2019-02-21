@@ -1,7 +1,8 @@
 import React from 'react'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
-import TextField from '@material-ui/core/TextField'
+import EmailInput from './EmailInput'
+import PasswordInput from './PasswordInput'
 import Button from '@material-ui/core/Button'
 
 class Signin extends React.Component {
@@ -34,29 +35,19 @@ class Signin extends React.Component {
                   <Typography component="h4" variant="h4" gutterBottom >
                      Sign In
                   </Typography>
-                  <TextField
+                  <EmailInput
                      id="signin-email"
-                     label="Email"
                      name="email"
-                     type="email"
                      value={this.state.email}
                      onChange={this.onChange}
-                     variant="outlined"
-                     style={{
-                        marginBottom: 8
-                     }}
+                     style={{marginBottom: 8}}
                   />
-                  <TextField
+                  <PasswordInput
                      id="signin-passw"
-                     label="Password"
                      name="passw"
-                     type="password"
                      value={this.state.passw}
                      onChange={this.onChange}
-                     variant="outlined"
-                     style={{
-                        marginBottom: 8
-                     }}
+                     style={{marginBottom: 8}}
                   />
                   <Button variant="contained" color="primary" type="submit" >
                      Sign In
