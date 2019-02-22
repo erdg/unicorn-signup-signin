@@ -5,7 +5,7 @@ import EmailInput from './EmailInput'
 import PasswordInput from './PasswordInput'
 import Button from '@material-ui/core/Button'
 
-function Signup() {
+function SignUp() {
 
    const [email, setEmail] = useState('')
    const [passw, setPassw] = useState('')
@@ -37,4 +37,4 @@ function Signup() {
 
 }
 
-export default Signup
+export default SignUp

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
-import Signin from './components/Signin'
-import Signup from './components/Signup'
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
 
 class App extends Component {
    render() {
@@ -19,8 +19,8 @@ function UnicornRouter() {
       <Router>
          <div>
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/signin" component={Signin} />
-            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/signin" component={SignIn} />
+            <Route exact path="/signup" component={SignUp} />
          </div>
       </Router>
    )
