@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import theme from '../theme'
 import Paper from '@material-ui/core/Paper'
 
@@ -6,13 +6,6 @@ import Paper from '@material-ui/core/Paper'
 //
 // form fields in 'Paper' component, horizontally centered in viewport
 function EntryForm(props) {
-
-   useEffect(() => {
-      document.body.style.backgroundColor = theme.palette.secondary.main
-      return () => {
-         document.body.style.backgroundColor = 'white'
-      }
-   })
 
    return (
       <div

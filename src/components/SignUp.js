@@ -10,6 +10,13 @@ function SignUp() {
    const [email, setEmail] = useState('')
    const [passw, setPassw] = useState('')
 
+   useEffect(() => {
+      document.body.style.backgroundColor = theme.palette.secondary.main
+      return () => {
+         document.body.style.backgroundColor = 'white'
+      }
+   })
+
    return (
       <EntryForm>
          <Typography component="h4" variant="h4" gutterBottom >
