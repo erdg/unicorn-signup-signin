@@ -1,5 +1,4 @@
 import React from 'react'
-import theme from '../theme'
 import Paper from '@material-ui/core/Paper'
 
 // sign-up/sign-in form component
