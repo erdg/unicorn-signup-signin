@@ -11,6 +11,9 @@ const theme = createMuiTheme({
       text: {
          primary: '#494939'
       }
+   },
+   typography: {
+      useNextVariants: true
    }
 })
 
