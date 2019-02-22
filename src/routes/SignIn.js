@@ -20,7 +20,7 @@ function SignIn() {
 
    return (
       <EntryForm>
-         <Typography component="h4" variant="h4" gutterBottom >
+         <Typography variant="h4" gutterBottom >
             Sign In
          </Typography>
          <EmailInput
