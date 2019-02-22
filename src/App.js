@@ -1,4 +1,6 @@
 import React from 'react'
+import { MuiThemeProvider } from '@material-ui/core/styles'
+import theme from './theme'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
 import SignIn from './components/SignIn'
@@ -7,7 +9,9 @@ import SignUp from './components/SignUp'
 function App() {
    return (
       <div className="App">
-         <UnicornRouter />
+         <MuiThemeProvider theme={theme}>
+            <UnicornRouter />
+         </MuiThemeProvider>
       </div>
    )
 }
