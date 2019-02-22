@@ -1,17 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
 
-class App extends Component {
-   render() {
-      return (
-         <div className="App">
-            <UnicornRouter />
-         </div>
-      )
-   }
+function App() {
+   return (
+      <div className="App">
+         <UnicornRouter />
+      </div>
+   )
 }
 
 function UnicornRouter() {
