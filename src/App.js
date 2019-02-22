@@ -2,9 +2,9 @@ import React from 'react'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import theme from './theme'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import LandingPage from './components/LandingPage'
-import SignIn from './components/SignIn'
-import SignUp from './components/SignUp'
+import LandingPage from './routes/LandingPage'
+import SignIn from './routes/SignIn'
+import SignUp from './routes/SignUp'
 
 function App() {
    return (

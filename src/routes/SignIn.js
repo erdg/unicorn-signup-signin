@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import EntryForm from './EntryForm'
+import React, { useState, useEffect } from 'react'
+import theme from '../theme'
+import EntryForm from '../components/EntryForm'
 import Typography from '@material-ui/core/Typography'
-import EmailInput from './EmailInput'
-import PasswordInput from './PasswordInput'
+import EmailInput from '../components/EmailInput'
+import PasswordInput from '../components/PasswordInput'
 import Button from '@material-ui/core/Button'
 
 function SignIn() {
