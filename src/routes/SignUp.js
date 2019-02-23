@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import useBackgroundColor from '../components/useBackgroundColor'
 import theme from '../theme'
 import EntryForm from '../components/EntryForm'
 import Typography from '@material-ui/core/Typography'
@@ -11,12 +12,7 @@ function SignUp() {
    const [email, setEmail] = useState('')
    const [passw, setPassw] = useState('')
 
-   useEffect(() => {
-      document.body.style.backgroundColor = theme.palette.secondary.main
-      return () => {
-         document.body.style.backgroundColor = 'white'
-      }
-   })
+   useBackgroundColor(theme.palette.secondary.main)
 
    return (
       <EntryForm>
