@@ -30,7 +30,7 @@ function LandingPage() {
          />
          <div>
             <Typography
-               component="h3" variant="h3"
+               variant="h3"
                align="center"
                gutterBottom
                style={{
