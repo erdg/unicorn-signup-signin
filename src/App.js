@@ -10,13 +10,13 @@ function App() {
    return (
       <div className="App">
          <MuiThemeProvider theme={theme}>
-            <UnicornRouter />
+            <AppRouter />
          </MuiThemeProvider>
       </div>
    )
 }
 
-function UnicornRouter() {
+function AppRouter() {
    return (
       <Router>
          <div>
